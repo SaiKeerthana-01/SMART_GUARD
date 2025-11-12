@@ -1,0 +1,6 @@
+venv39/
+__pycache__/
+*.pyc
+/node_modules/
+/build
+.DS_Store

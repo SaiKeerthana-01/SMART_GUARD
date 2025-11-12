@@ -1,0 +1,20 @@
+[0;1;32m*[0m influxdb.service - InfluxDB is an open-source, distributed, time series database
+     Loaded: loaded (/lib/systemd/system/influxdb.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sun 2025-11-09 12:33:06 PST; 1min 19s ago
+       Docs: man:influxd(1)
+   Main PID: 6692 (influxd)
+      Tasks: 6 (limit: 1099)
+     Memory: 16.0M
+     CGroup: /system.slice/influxdb.service
+             `-6692 /usr/bin/influxd -config /etc/influxdb/influxdb.conf
+
+Nov 09 12:33:18 mininet-vm influxd[6692]: ts=2025-11-09T20:33:18.232378Z lvl=info msg="Go runtime" log_id=0~6a0UKl000 version=go1.13.8 maxprocs=1
+Nov 09 12:33:20 mininet-vm influxd[6692]: ts=2025-11-09T20:33:20.126402Z lvl=info msg="Using data dir" log_id=0~6a0UKl000 service=store path=/var/lib/influxdb/data
+Nov 09 12:33:20 mininet-vm influxd[6692]: ts=2025-11-09T20:33:20.311844Z lvl=info msg="Compaction settings" log_id=0~6a0UKl000 service=store max_concurrent_compactions=1 throughput_bytes_per_second=50331648 throughput_burst_bytes=50331648
+Nov 09 12:33:20 mininet-vm influxd[6692]: ts=2025-11-09T20:33:20.420800Z lvl=info msg="Open store (start)" log_id=0~6a0UKl000 service=store trace_id=0~6a0cyG000 op_name=tsdb_open op_event=start
+Nov 09 12:33:25 mininet-vm influxd[6692]: ts=2025-11-09T20:33:25.325262Z lvl=info msg="Opened file" log_id=0~6a0UKl000 engine=tsm1 service=filestore path=/var/lib/influxdb/data/_internal/monitor/1/000000001-000000001.tsm id=0 duration=115.315ms
+Nov 09 12:33:25 mininet-vm influxd[6692]: ts=2025-11-09T20:33:25.613550Z lvl=info msg="Opened file" log_id=0~6a0UKl000 engine=tsm1 service=filestore path=/var/lib/influxdb/data/_internal/monitor/1/000000003-000000001.tsm id=1 duration=169.004ms
+Nov 09 12:33:25 mininet-vm influxd[6692]: ts=2025-11-09T20:33:25.728014Z lvl=info msg="Opened file" log_id=0~6a0UKl000 engine=tsm1 service=filestore path=/var/lib/influxdb/data/_internal/monitor/1/000000005-000000001.tsm id=2 duration=53.713ms
+Nov 09 12:33:26 mininet-vm influxd[6692]: ts=2025-11-09T20:33:25.984009Z lvl=info msg="Opened file" log_id=0~6a0UKl000 engine=tsm1 service=filestore path=/var/lib/influxdb/data/_internal/monitor/1/000000007-000000001.tsm id=3 duration=35.149ms
+Nov 09 12:33:26 mininet-vm influxd[6692]: ts=2025-11-09T20:33:26.406468Z lvl=info msg="Opened file" log_id=0~6a0UKl000 engine=tsm1 service=filestore path=/var/lib/influxdb/data/_internal/monitor/1/000000009-000000001.tsm id=4 duration=360.724ms
+Nov 09 12:33:26 mininet-vm influxd[6692]: ts=2025-11-09T20:33:26.879494Z lvl=info msg="Reading file" log_id=0~6a0UKl000 engine=tsm1 service=cacheloader path=/var/lib/influxdb/wal/_internal/monitor/1/_00001.wal size=2533187
